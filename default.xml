@@ -8,6 +8,14 @@
            remote="aosp"
            sync-j="4" />
 
+  <remote  name="github"
+           fetch=".."
+           review="review.lineageos.org" />
+  <default revision="refs/heads/lineage-22.0"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
   <superproject name="platform/superproject" remote="aosp" revision="android-15.0.0_r5"/>
   <contactinfo bugurl="go/repo-bug" />
 
@@ -198,7 +206,7 @@
   <project path="external/cpu_features" name="platform/external/cpu_features" groups="pdk" />
   <project path="external/cpuinfo" name="platform/external/cpuinfo" groups="pdk" />
   <project path="external/crcalc" name="platform/external/crcalc" groups="pdk" />
-  <project path="external/cronet" name="platform/external/cronet" groups="pdk" />
+  <project path="external/cronet" name="LineageOS/android_external_cronet" groups="pdk" />
   <project path="external/crosvm" name="platform/external/crosvm" groups="pdk" />
   <project path="external/curl" name="platform/external/curl" groups="pdk" />
   <project path="external/dagger2" name="platform/external/dagger2" groups="pdk" />
@@ -1235,7 +1243,6 @@
   <project path="packages/modules/SdkExtensions" name="platform/packages/modules/SdkExtensions" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/StatsD" name="platform/packages/modules/StatsD" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/Telephony" name="platform/packages/modules/Telephony" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="packages/modules/TestModule" name="platform/packages/modules/TestModule" />
   <project path="packages/modules/ThreadNetwork" name="platform/packages/modules/ThreadNetwork" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/Uwb" name="platform/packages/modules/Uwb" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/UprobeStats" name="platform/packages/modules/UprobeStats" groups="pdk-cw-fs,pdk-fs" />
