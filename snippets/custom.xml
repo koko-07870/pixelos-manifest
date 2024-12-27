@@ -9,6 +9,10 @@
            fetch="https://gitlab.com/PixelOS-AOSP"
            revision="refs/heads/fifteen" />
 
+  <!-- Gitea -->
+  <remote  name="gitea"
+           fetch="https://git.keksla.wtf/" />
+  
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="PixelOS" />
   <project path="art" name="art" groups="pdk" remote="PixelOS" />
@@ -64,6 +68,5 @@
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="PixelOS" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="PixelOS" />
-  <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="PixelOS-Gitlab" />
-
+  <project path="vendor/gms" name="StatiXOS/google-mobile-services" remote="gitea" revision="vic" clone-depth="1" />
 </manifest>
